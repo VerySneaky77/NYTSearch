@@ -18,12 +18,12 @@
         </div>
     </header>
 
-    <form id="search-form">
-        <div class="container-fluid w-90 panel panel-default">
-            <div class="panel-heading bg-primary">
-                <h3 class="panel-title">Search Parameters</h3>
-            </div>
-            <div class="panel-body">
+    <div class="container-fluid w-90 panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Search Parameters</h3>
+        </div>
+        <div class="panel-body">
+            <form id="search-form">
                 <div class="form-group">
                     <label for="search-term">Search Term:</label>
                     <input type="term" class="form-control" id="search-term" aria-describedby="searchHelp"
@@ -52,17 +52,17 @@
                         retrieval.</small>
                 </div>
                 <button type="submit" id="search-submit" class="btn btn-primary">Search</button>
-            </div>
+            </form>
         </div>
-    </form>
+    </div>
 
-    <form id="results" class="container-fluid w-90">
-        <div class="row">
-
-
+    <div class="container-fluid w-90 panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Top Articles</h3>
         </div>
-
-    </form>
+        <div id="results-panel" class="panel-body">
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
     <script type="text/javascript" src="assets/javascript/nyt_search_api.js"></script>
