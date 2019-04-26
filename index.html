@@ -18,33 +18,45 @@
         </div>
     </header>
 
-    <form id="search-form" class="container-fluid w-90">
-        <div class="form-group">
-            <label for="search-term">Search Term:</label>
-            <input type="term" class="form-control" id="search-term" aria-describedby="searchHelp" placeholder="">
-            <small id="searchHelp" class="form-text text-muted">Enter target term(s) to a search.</small>
+    <form id="search-form">
+        <div class="container-fluid w-90 panel panel-default">
+            <div class="panel-heading bg-primary">
+                <h3 class="panel-title">Search Parameters</h3>
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <label for="search-term">Search Term:</label>
+                    <input type="term" class="form-control" id="search-term" aria-describedby="searchHelp"
+                        placeholder="">
+                    <small id="searchHelp" class="form-text text-muted">Enter target term(s) to a search.</small>
+                </div>
+                <div class="form-group">
+                    <label for="search-number-of-records">Number of Records to Retrieve:</label>
+                    <input type="records" class="form-control" id="search-number-of-records"
+                        aria-describedby="recordsHelp" placeholder="">
+                    <small id="recordsHelp" class="form-text text-muted">Number of records to show in your
+                        results.</small>
+                </div>
+                <div class="form-group">
+                    <label for="search-start-year">Start Year (Optional):</label>
+                    <input type="term" class="form-control" id="search-start-year" aria-describedby="yearStartHelp"
+                        placeholder="">
+                    <small id="yearStartHelp" class="form-text text-muted">Year from which to begin record
+                        retrieval.</small>
+                </div>
+                <div class="form-group">
+                    <label for="search-end-year">End Year (Optional):</label>
+                    <input type="term" class="form-control" id="search-end-year" aria-describedby="yearEndHelp"
+                        placeholder="">
+                    <small id="yearEndHelp" class="form-text text-muted">Year from which to end record
+                        retrieval.</small>
+                </div>
+                <button type="submit" id="search-submit" class="btn btn-primary">Search</button>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="search-number-of-records">Number of Records to Retrieve:</label>
-            <input type="records" class="form-control" id="search-number-of-records" aria-describedby="recordsHelp"
-                placeholder="">
-            <small id="recordsHelp" class="form-text text-muted">Number of records to show in your results.</small>
-        </div>
-        <div class="form-group">
-            <label for="search-start-year">Start Year (Optional):</label>
-            <input type="term" class="form-control" id="search-start-year" aria-describedby="yearStartHelp"
-                placeholder="">
-            <small id="yearStartHelp" class="form-text text-muted">Year from which to begin record retrieval.</small>
-        </div>
-        <div class="form-group">
-            <label for="search-end-year">End Year (Optional):</label>
-            <input type="term" class="form-control" id="search-end-year" aria-describedby="yearEndHelp" placeholder="">
-            <small id="yearEndHelp" class="form-text text-muted">Year from which to end record retrieval.</small>
-        </div>
-        <button type="submit" id="search-submit" class="btn btn-primary">Search</button>
     </form>
 
-    <form class="container-fluid w-90">
+    <form id="results" class="container-fluid w-90">
         <div class="row">
 
 
