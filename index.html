@@ -32,12 +32,18 @@
             <small id="recordsHelp" class="form-text text-muted">Number of records to show in your results.</small>
         </div>
         <div class="form-group">
-            <label for="search-term">Search Term:</label>
-            <input type="term" class="form-control" id="search-term" aria-describedby="searchHelp"
+            <label for="search-start-year">Start Year (Optional):</label>
+            <input type="term" class="form-control" id="search-start-year" aria-describedby="yearStartHelp"
                 placeholder="">
-            <small id="cearchHelp" class="form-text text-muted">Enter target term(s) to a search.</small>
+            <small id="yearStartHelp" class="form-text text-muted">Year from which to begin record retrieval.</small>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="form-group">
+            <label for="search-end-year">End Year (Optional):</label>
+            <input type="term" class="form-control" id="search-end-year" aria-describedby="yearEndHelp"
+                placeholder="">
+            <small id="yearEndHelp" class="form-text text-muted">Year from which to end record retrieval.</small>
+        </div>
+        <button type="submit" id="search-submit" class="btn btn-primary">Search</button>
     </form>
 </body>
 
